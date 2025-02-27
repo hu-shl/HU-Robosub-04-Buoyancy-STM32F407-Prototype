@@ -1,0 +1,5 @@
+/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/CMakeFiles/STM32F407-adda-template.dir
+/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/CMakeFiles/edit_cache.dir
+/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/CMakeFiles/rebuild_cache.dir
+/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
