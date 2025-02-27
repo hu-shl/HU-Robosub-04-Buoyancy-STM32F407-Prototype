@@ -54,19 +54,11 @@ TIM_HandleTypeDef htim3;
 HCD_HandleTypeDef hhcd_USB_OTG_FS;
 
 /* USER CODE BEGIN PV */
-volatile int value1,value2; // left channel right channel
+volatile int value1,value2; // left channel, right channel values
 
-volatile int pos; // ADC indexing
-volatile int adc1_buf[BUF_SIZE];
+volatile uint32_t pos; // ADC indexing
+volatile uint32_t adc1_buf[BUF_SIZE];
 volatile bool bufferFull = false;
-
-volatile int avg_buf[BUF_SIZE];
-
-// float Sinbuff[BUF_SIZE];
-// float Cosbuff[BUF_SIZE];
-// float Sinsum = 0;
-// float Cossum = 0;
-// float DFT [BUF_SIZE/2];
 
 /* USER CODE END PV */
 

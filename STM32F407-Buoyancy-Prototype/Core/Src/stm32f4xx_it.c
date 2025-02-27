@@ -1,21 +1,21 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file    stm32f4xx_it.c
-  * @brief   Interrupt Service Routines.
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    stm32f4xx_it.c
+ * @brief   Interrupt Service Routines.
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under Ultimate Liberty license
+ * SLA0044, the "License"; You may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at:
+ *                             www.st.com/SLA0044
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -50,17 +50,11 @@ extern DAC_HandleTypeDef hdac;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-extern volatile int value1, value2; // left channel right channel values
+extern volatile int value1, value2; // left channel, right channel values
 
 extern volatile uint32_t pos; // ADC indexing
 extern volatile uint32_t adc1_buf[BUF_SIZE];
 extern volatile bool bufferFull;
-
-extern volatile uint32_t avg_buf[BUF_SIZE];
-
-uint32_t filter_buf[WINDOW_SIZE] = {0};  // Buffer for the moving average filter
-uint32_t filter_sum = 0;  // Sum of the filter buffer
-uint8_t filter_pos = 0;  // Position in the filter buffer
 
 /* USER CODE END PFP */
 
@@ -224,42 +218,34 @@ void TIM3_IRQHandler(void)
   /* USER CODE BEGIN TIM3_IRQn 1 */
 
   /* ADC1 Left channel read */
-  HAL_ADC_Start(&hadc1);							// start conversion
-  HAL_ADC_PollForConversion(&hadc1,11);				// wait for conversion to end -- mux ADC123_IN11 input PC1
-  adc1_buf[pos] = HAL_ADC_GetValue(&hadc1);			// fill adc_buf with value1
+  HAL_ADC_Start(&hadc1);                    // start conversion
+  HAL_ADC_PollForConversion(&hadc1, 11);    // wait for conversion to end -- mux ADC123_IN11 input PC1
+  adc1_buf[pos] = HAL_ADC_GetValue(&hadc1); // fill adc_buf with value1
 
-//  /* ADC2 Right channel read */
-//  HAL_ADC_Start(&hadc2);											// start conversion
-//  HAL_ADC_PollForConversion(&hadc2,12);							// wait for conversion to end -- mux ADC123_IN12 input PC2
-//  value2 = HAL_ADC_GetValue(&hadc2);  							// read value
-//  value2 ++;
+  //  /* ADC2 Right channel read */
+  //  HAL_ADC_Start(&hadc2);											// start conversion
+  //  HAL_ADC_PollForConversion(&hadc2,12);				// wait for conversion to end -- mux ADC123_IN12 input PC2
+  //  value2 = HAL_ADC_GetValue(&hadc2);  				// read value
+  //  value2 ++;
 
-  // Update the filter buffer and sum
-  filter_sum -= filter_buf[filter_pos];
-  filter_buf[filter_pos] = adc1_buf[pos];
-  filter_sum += adc1_buf[pos];
-  filter_pos = (filter_pos + 1) % WINDOW_SIZE;
-
-  // Calculate the moving average and store in average buffer
-  avg_buf[pos] = filter_sum / WINDOW_SIZE;
   pos++; // Increase pos counter
-			 					
+
   if (pos > BUF_SIZE)
   {
-	  bufferFull = true; // data gevuld in buffer
-	  pos = 0; // herstel de positieteller naar nul
+    bufferFull = true; // Data buffer full
+    pos = 0;           // Reset pos counter to zero
   }
 
-	/* DAC1 Left SetValue */
-	// HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, adc1_buf[pos]);	// set adc1_buf[pos] on DAC1	PA4
-	HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, avg_buf[pos]);	// set adc1_buf[pos] on DAC1	PA4
-	HAL_DAC_Start(&hdac, DAC_CHANNEL_1);								    // execute new value
+  /* DAC1 Left SetValue */
+  // HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, adc1_buf[pos]); // set adc1_buf[pos] on DAC1	PA4
+  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, value1); // set value1 on DAC1	PA4
+  HAL_DAC_Start(&hdac, DAC_CHANNEL_1);                             // execute new value
 
   /* DAC2 Right SetValue */
-//  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, value2);    	// set value on DAC2	PA5
-//  HAL_DAC_Start(&hdac, DAC_CHANNEL_2);							    	// execute new value
+  //  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, value2); // set value2 on DAC2	PA5
+  //  HAL_DAC_Start(&hdac, DAC_CHANNEL_2); // execute new value
 
-//  HAL_GPIO_TogglePin(GPIOD, LD4_Pin);
+  //  HAL_GPIO_TogglePin(GPIOD, LD4_Pin); // Blink onboard LED
   /* USER CODE END TIM3_IRQn 1 */
 }
 

@@ -49,9 +49,6 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
 #define BUF_SIZE 1023
-#define WINDOW_SIZE 10
-// Paramaters kernel
-#define TAPS 111	   		// Number of taps (!! oneven)
 
 /* USER CODE END EC */
 
