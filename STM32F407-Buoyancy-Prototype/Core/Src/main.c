@@ -104,27 +104,6 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
-  /* Moving average variables */
-  int windowSize = 3;
-  int i, j;
-
-  float sum = 0;
-  float movAvg = 0;
-  
-  /* DFT variables */
-//	float sinbuf = 0;
-//	float cosbuf = 0;
-//	float Im     = 0;
-//	float Re     = 0;
-//
-//	float Im_pow = 0;
-//	float Re_pow = 0;
-//
-//	float freq;
-//	float vector;
-//	float scaled_data[BUF_SIZE];
-
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -149,44 +128,10 @@ int main(void)
     if (bufferFull)
     {
 
-      /* Do math stuff here  s*/
-      for (int i = 0; i <= (BUF_SIZE - windowSize); i++)
-      {
-        sum = 0;
-        for (int j = i; j < i + windowSize; j++)
-        {
-          sum += adc1_buf[j];
-        }
-
-        movAvg = sum / windowSize;
-
-      }
-
+      /* Do math stuff here */
       bufferFull = false; // Buffer is no longer full
     }
 
-    /* Dft code start*/
-    //	  for (freq = start_freq; freq <= stop_freq ; freq += 50)
-    //	        {
-    //	            Im = 0;
-    //	            Re = 0;
-    //	            for (i = 0; i < TAPS; i++)
-    //	            {
-    //	                scaled_data[i] = (2.0 * MAF_buf[i] / INDEMP_FACTOR ) - 1.0;   // indempen van digitale signaal naar min -1 en max +1
-    //	                UART_putint(scaled_data[i]);
-    //
-    //	                sinbuf = sin(freq * 2.0*M_PI  * (i / (TAPS * 1.0)));
-    //	                cosbuf = cos(freq * 2.0*M_PI  * (i / (TAPS * 1.0)));
-    //
-    //	                Im = Im + scaled_data[i] * sinbuf; //
-    //	                Re = Re + scaled_data[i] * cosbuf; //
-    //	            }
-    //
-    //	            Re_pow = (Re / TAPS) * (Re / TAPS); // A^2
-    //	            Im_pow = (Im / TAPS) * (Im / TAPS); // B^2
-    //
-    //	            vector = pow(Im_pow + Re_pow, 0.5);         // SQRT(A^2 + B^2)
-    //	        }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
