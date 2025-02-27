@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/cmake/stm32cubemx
+# Install script for directory: /Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

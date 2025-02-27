@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := STM32F407-adda-template
+BUILD_ARTIFACT_NAME := STM32F407-Buoyancy-Prototype
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-STM32F407-adda-template.elf \
+STM32F407-Buoyancy-Prototype.elf \
 
 MAP_FILES += \
-STM32F407-adda-template.map \
+STM32F407-Buoyancy-Prototype.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-STM32F407-adda-template.list \
+STM32F407-Buoyancy-Prototype.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: STM32F407-adda-template.elf secondary-outputs
+main-build: STM32F407-Buoyancy-Prototype.elf secondary-outputs
 
 # Tool invocations
-STM32F407-adda-template.elf STM32F407-adda-template.map: $(OBJS) $(USER_OBJS) /Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE\ jaar\ 3/Q1/Sensor\ dataverwerking/S&D-piezo/STM32F407-adda-template/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32F407-adda-template.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Q1/Sensor dataverwerking/S&D-piezo/STM32F407-adda-template/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407-adda-template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32F407-Buoyancy-Prototype.elf STM32F407-Buoyancy-Prototype.map: $(OBJS) $(USER_OBJS) /Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE\ jaar\ 3/Q1/Sensor\ dataverwerking/S&D-piezo/STM32F407-Buoyancy-Prototype/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32F407-Buoyancy-Prototype.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Q1/Sensor dataverwerking/S&D-piezo/STM32F407-Buoyancy-Prototype/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407-Buoyancy-Prototype.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-STM32F407-adda-template.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "STM32F407-adda-template.list"
+STM32F407-Buoyancy-Prototype.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "STM32F407-Buoyancy-Prototype.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) STM32F407-adda-template.elf STM32F407-adda-template.list STM32F407-adda-template.map default.size.stdout
+	-$(RM) STM32F407-Buoyancy-Prototype.elf STM32F407-Buoyancy-Prototype.list STM32F407-Buoyancy-Prototype.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

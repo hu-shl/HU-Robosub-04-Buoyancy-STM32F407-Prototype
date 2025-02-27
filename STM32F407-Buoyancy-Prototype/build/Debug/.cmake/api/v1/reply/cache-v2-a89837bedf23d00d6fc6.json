@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/build/Debug"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/build/Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/build/Debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/build/Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -879,7 +879,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "STM32F407-adda-template"
+			"value" : "STM32F407-Buoyancy-Prototype"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/cmake/gcc-arm-none-eabi.cmake"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/gcc-arm-none-eabi.cmake"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1190,7 +1190,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "STM32F407-adda-template_BINARY_DIR",
+			"name" : "STM32F407-Buoyancy-Prototype_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1199,10 +1199,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/build/Debug"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/build/Debug"
 		},
 		{
-			"name" : "STM32F407-adda-template_IS_TOP_LEVEL",
+			"name" : "STM32F407-Buoyancy-Prototype_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1214,7 +1214,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "STM32F407-adda-template_SOURCE_DIR",
+			"name" : "STM32F407-Buoyancy-Prototype_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1223,7 +1223,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype"
 		},
 		{
 			"name" : "stm32cubemx_BINARY_DIR",
@@ -1235,7 +1235,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/build/Debug/cmake/stm32cubemx"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/build/Debug/cmake/stm32cubemx"
 		},
 		{
 			"name" : "stm32cubemx_IS_TOP_LEVEL",
@@ -1259,7 +1259,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-adda-template/cmake/stm32cubemx"
+			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/stm32cubemx"
 		}
 	],
 	"kind" : "cache",

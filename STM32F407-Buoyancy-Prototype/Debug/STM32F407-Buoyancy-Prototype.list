@@ -1,5 +1,5 @@
 
-STM32F407-adda-template.elf:     file format elf32-littlearm
+STM32F407-Buoyancy-Prototype.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
