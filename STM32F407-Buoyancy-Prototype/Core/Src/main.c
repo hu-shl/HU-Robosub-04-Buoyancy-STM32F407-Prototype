@@ -94,7 +94,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+    HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -115,7 +115,7 @@ int main(void)
   MX_TIM3_Init();
   MX_USB_OTG_FS_HCD_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim3);				// start the interrupt timer 3
+  // HAL_TIM_Base_Start_IT(&htim3);				// start the interrupt timer 3
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -124,16 +124,9 @@ int main(void)
   while (1)
   {
 
-    /* If ADC buffer is filled with values calculate */
-    if (bufferFull)
-    {
-
-      /* Do math stuff here */
-      bufferFull = false; // Buffer is no longer full
-    }
-
     /* USER CODE END WHILE */
-
+    HAL_GPIO_TogglePin(GPIOD, LD3_Pin); // Blink orange onboard LED
+    HAL_Delay(5000);
     /* USER CODE BEGIN 3 */
   }
 
@@ -391,7 +384,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 5-1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 840-1;
+  htim3.Init.Period = 16800-1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)

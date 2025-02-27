@@ -218,9 +218,9 @@ void TIM3_IRQHandler(void)
   /* USER CODE BEGIN TIM3_IRQn 1 */
 
   /* ADC1 Left channel read */
-  HAL_ADC_Start(&hadc1);                    // start conversion
-  HAL_ADC_PollForConversion(&hadc1, 11);    // wait for conversion to end -- mux ADC123_IN11 input PC1
-  adc1_buf[pos] = HAL_ADC_GetValue(&hadc1); // fill adc_buf with value1
+  // HAL_ADC_Start(&hadc1);                    // start conversion
+  // HAL_ADC_PollForConversion(&hadc1, 11);    // wait for conversion to end -- mux ADC123_IN11 input PC1
+  // adc1_buf[pos] = HAL_ADC_GetValue(&hadc1); // fill adc_buf with value1
 
   //  /* ADC2 Right channel read */
   //  HAL_ADC_Start(&hadc2);											// start conversion
@@ -228,24 +228,24 @@ void TIM3_IRQHandler(void)
   //  value2 = HAL_ADC_GetValue(&hadc2);  				// read value
   //  value2 ++;
 
-  pos++; // Increase pos counter
+  // pos++; // Increase pos counter
 
-  if (pos > BUF_SIZE)
-  {
-    bufferFull = true; // Data buffer full
-    pos = 0;           // Reset pos counter to zero
-  }
+  // if (pos > BUF_SIZE)
+  // {
+  //   bufferFull = true; // Data buffer full
+  //   pos = 0;           // Reset pos counter to zero
+  // }
 
   /* DAC1 Left SetValue */
   // HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, adc1_buf[pos]); // set adc1_buf[pos] on DAC1	PA4
-  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, value1); // set value1 on DAC1	PA4
-  HAL_DAC_Start(&hdac, DAC_CHANNEL_1);                             // execute new value
+  // HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, value1); // set value1 on DAC1	PA4
+  // HAL_DAC_Start(&hdac, DAC_CHANNEL_1);                             // execute new value
 
   /* DAC2 Right SetValue */
   //  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, value2); // set value2 on DAC2	PA5
   //  HAL_DAC_Start(&hdac, DAC_CHANNEL_2); // execute new value
 
-  //  HAL_GPIO_TogglePin(GPIOD, LD4_Pin); // Blink onboard LED
+  HAL_GPIO_TogglePin(GPIOD, LD5_Pin); // Blink onboard LED
   /* USER CODE END TIM3_IRQn 1 */
 }
 
