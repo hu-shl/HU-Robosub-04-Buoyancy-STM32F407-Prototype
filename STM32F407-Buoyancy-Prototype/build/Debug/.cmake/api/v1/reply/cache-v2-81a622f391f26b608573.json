@@ -1155,10 +1155,10 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "The CMake toolchain file"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "FILEPATH",
 			"value" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/gcc-arm-none-eabi.cmake"
 		},
 		{

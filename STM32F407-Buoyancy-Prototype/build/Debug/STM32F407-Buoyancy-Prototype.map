@@ -709,7 +709,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
  .debug_line    0x0000000000000000     0x1168 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
- .debug_str     0x0000000000000000    0xd2b7d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
+ .debug_str     0x0000000000000000    0xd2ba8 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
  .debug_frame   0x0000000000000000      0x250 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
  .ARM.attributes
@@ -725,7 +725,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x11 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
  .debug_macro   0x0000000000000000      0xaa8 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
  .debug_line    0x0000000000000000       0xe6 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
- .debug_str     0x0000000000000000     0x2eea CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
+ .debug_str     0x0000000000000000     0x2f15 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
  .ARM.attributes
                 0x0000000000000000       0x39 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
@@ -964,7 +964,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .debug_line    0x0000000000000000      0xca5 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
- .debug_str     0x0000000000000000    0xd26e1 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_str     0x0000000000000000    0xd270c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .debug_frame   0x0000000000000000       0xf0 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
  .ARM.attributes
@@ -1109,7 +1109,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .debug_line    0x0000000000000000      0xd00 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
- .debug_str     0x0000000000000000    0xd2782 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .debug_str     0x0000000000000000    0xd27ad CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .debug_frame   0x0000000000000000      0x274 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
  .ARM.attributes
@@ -1253,7 +1253,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
  .debug_line    0x0000000000000000      0xd1b CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
- .debug_str     0x0000000000000000    0xd27e8 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .debug_str     0x0000000000000000    0xd2813 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
  .debug_frame   0x0000000000000000      0x250 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
  .ARM.attributes
@@ -1363,7 +1363,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
  .debug_line    0x0000000000000000      0x9a6 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
- .debug_str     0x0000000000000000    0xd242e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
+ .debug_str     0x0000000000000000    0xd2459 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
  .ARM.attributes
                 0x0000000000000000       0x39 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj
@@ -1592,7 +1592,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
  .debug_line    0x0000000000000000     0x1621 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
- .debug_str     0x0000000000000000    0xd27a9 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
+ .debug_str     0x0000000000000000    0xd27d4 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
  .debug_frame   0x0000000000000000       0xac CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
  .ARM.attributes
@@ -1735,7 +1735,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_line    0x0000000000000000     0x11f0 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x0000000000000000    0xd29c1 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x0000000000000000    0xd29ec CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_frame   0x0000000000000000      0x250 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .ARM.attributes
@@ -1880,7 +1880,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .debug_line    0x0000000000000000      0xba6 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
- .debug_str     0x0000000000000000    0xd27f9 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .debug_str     0x0000000000000000    0xd2824 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .debug_frame   0x0000000000000000      0x264 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
  .ARM.attributes
@@ -2003,7 +2003,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
  .debug_line    0x0000000000000000      0xa99 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
- .debug_str     0x0000000000000000    0xd26c8 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .debug_str     0x0000000000000000    0xd26f3 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
  .debug_frame   0x0000000000000000       0xdc CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
  .ARM.attributes
@@ -2424,7 +2424,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
  .debug_line    0x0000000000000000      0xc7a CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
- .debug_str     0x0000000000000000    0xd2641 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .debug_str     0x0000000000000000    0xd266c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
  .debug_frame   0x0000000000000000      0x174 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
  .ARM.attributes
@@ -2694,7 +2694,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
  .debug_line    0x0000000000000000      0xbec CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
- .debug_str     0x0000000000000000    0xd2932 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
+ .debug_str     0x0000000000000000    0xd295d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
  .debug_frame   0x0000000000000000      0x20c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
  .ARM.attributes
@@ -3065,7 +3065,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x98 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
  .debug_macro   0x0000000000000000      0x12d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
  .debug_line    0x0000000000000000      0x99f CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
- .debug_str     0x0000000000000000    0xd2427 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
+ .debug_str     0x0000000000000000    0xd2452 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
  .ARM.attributes
                 0x0000000000000000       0x39 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
@@ -4013,7 +4013,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6a CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x0000000000000000      0x1df CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
  .debug_line    0x0000000000000000      0x310 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
- .debug_str     0x0000000000000000     0x5da6 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x0000000000000000     0x5dd1 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
  .debug_frame   0x0000000000000000       0x34 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/sysmem.c.obj
  .ARM.attributes
@@ -4139,7 +4139,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x0000000000000000       0xce CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
  .debug_line    0x0000000000000000      0x61a CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
- .debug_str     0x0000000000000000     0x8a82 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x0000000000000000     0x8aad CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
  .comment       0x0000000000000000       0x4d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
  .debug_frame   0x0000000000000000      0x2ac CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/syscalls.c.obj
  .ARM.attributes
@@ -4864,23 +4864,23 @@ LOAD /usr/local/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9
  .debug_frame   0x00000000000048a8       0x2c /usr/local/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .debug_frame   0x00000000000048d4       0x34 /usr/local/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
 
-.debug_info     0x0000000000000000    0x14243
- .debug_info    0x0000000000000000     0x2487 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/main.c.obj
- .debug_info    0x0000000000002487     0x1abf CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x0000000000003f46     0x2442 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x0000000000006388      0xddc CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_info    0x0000000000007164      0x996 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x0000000000007afa      0x83e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x0000000000008338      0xf1f CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x0000000000009257      0x9b2 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x0000000000009c09      0xb09 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
- .debug_info    0x000000000000a712     0x2685 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
- .debug_info    0x000000000000cd97     0x2c7a CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_info    0x000000000000fa11     0x15c7 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_info    0x0000000000010fd8     0x10ab CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
- .debug_info    0x0000000000012083     0x1bfa CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
- .debug_info    0x0000000000013c7d      0x5a4 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x0000000000014221       0x22 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/startup_stm32f407xx.s.obj
+.debug_info     0x0000000000000000    0x14241
+ .debug_info    0x0000000000000000     0x2485 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/main.c.obj
+ .debug_info    0x0000000000002485     0x1abf CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x0000000000003f44     0x2442 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x0000000000006386      0xddc CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_info    0x0000000000007162      0x996 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x0000000000007af8      0x83e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x0000000000008336      0xf1f CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x0000000000009255      0x9b2 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x0000000000009c07      0xb09 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
+ .debug_info    0x000000000000a710     0x2685 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+ .debug_info    0x000000000000cd95     0x2c7a CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_info    0x000000000000fa0f     0x15c7 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_info    0x0000000000010fd6     0x10ab CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
+ .debug_info    0x0000000000012081     0x1bfa CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+ .debug_info    0x0000000000013c7b      0x5a4 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x000000000001421f       0x22 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/startup_stm32f407xx.s.obj
 
 .debug_abbrev   0x0000000000000000     0x2435
  .debug_abbrev  0x0000000000000000      0x343 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/main.c.obj
@@ -5056,38 +5056,38 @@ LOAD /usr/local/Cellar/gcc-arm-none-eabi/20200630/bin/../lib/gcc/arm-none-eabi/9
  .debug_line    0x0000000000014b16      0xa28 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x000000000001553e      0x108 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/startup_stm32f407xx.s.obj
 
-.debug_str      0x0000000000000000    0xdc143
- .debug_str     0x0000000000000000    0xd7732 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/main.c.obj
-                                      0xd7bc0 (size before relaxing)
- .debug_str     0x00000000000d7732      0x16e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_it.c.obj
-                                      0xd75b9 (size before relaxing)
- .debug_str     0x00000000000d78a0      0x659 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                                      0xd7e58 (size before relaxing)
- .debug_str     0x00000000000d7ef9      0x351 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                                      0xd2b52 (size before relaxing)
- .debug_str     0x00000000000d824a      0x31c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                                      0xd2999 (size before relaxing)
- .debug_str     0x00000000000d8566      0x1ee CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                                      0xd273e (size before relaxing)
- .debug_str     0x00000000000d8754      0x4d2 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                                      0xd2eb1 (size before relaxing)
- .debug_str     0x00000000000d8c26      0x5c5 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                                      0xd3079 (size before relaxing)
- .debug_str     0x00000000000d91eb      0x25c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
-                                      0xd29dd (size before relaxing)
- .debug_str     0x00000000000d9447      0xb6e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
-                                      0xd356c (size before relaxing)
- .debug_str     0x00000000000d9fb5      0xe72 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                                      0xd38d6 (size before relaxing)
- .debug_str     0x00000000000dae27      0x57d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                                      0xd3077 (size before relaxing)
- .debug_str     0x00000000000db3a4      0x4ec CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
-                                      0xd2d2e (size before relaxing)
- .debug_str     0x00000000000db890      0x724 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
-                                      0xd2f72 (size before relaxing)
- .debug_str     0x00000000000dbfb4       0xd9 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/system_stm32f4xx.c.obj
-                                      0xd2597 (size before relaxing)
- .debug_str     0x00000000000dc08d       0xb6 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/startup_stm32f407xx.s.obj
+.debug_str      0x0000000000000000    0xdc16e
+ .debug_str     0x0000000000000000    0xd775d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/main.c.obj
+                                      0xd7beb (size before relaxing)
+ .debug_str     0x00000000000d775d      0x16e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_it.c.obj
+                                      0xd75e4 (size before relaxing)
+ .debug_str     0x00000000000d78cb      0x659 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                                      0xd7e83 (size before relaxing)
+ .debug_str     0x00000000000d7f24      0x351 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                                      0xd2b7d (size before relaxing)
+ .debug_str     0x00000000000d8275      0x31c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                                      0xd29c4 (size before relaxing)
+ .debug_str     0x00000000000d8591      0x1ee CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                                      0xd2769 (size before relaxing)
+ .debug_str     0x00000000000d877f      0x4d2 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                                      0xd2edc (size before relaxing)
+ .debug_str     0x00000000000d8c51      0x5c5 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                                      0xd30a4 (size before relaxing)
+ .debug_str     0x00000000000d9216      0x25c CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
+                                      0xd2a08 (size before relaxing)
+ .debug_str     0x00000000000d9472      0xb6e CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+                                      0xd3597 (size before relaxing)
+ .debug_str     0x00000000000d9fe0      0xe72 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                                      0xd3901 (size before relaxing)
+ .debug_str     0x00000000000dae52      0x57d CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                                      0xd30a2 (size before relaxing)
+ .debug_str     0x00000000000db3cf      0x4ec CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
+                                      0xd2d59 (size before relaxing)
+ .debug_str     0x00000000000db8bb      0x724 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+                                      0xd2f9d (size before relaxing)
+ .debug_str     0x00000000000dbfdf       0xd9 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/Core/Src/system_stm32f4xx.c.obj
+                                      0xd25c2 (size before relaxing)
+ .debug_str     0x00000000000dc0b8       0xb6 CMakeFiles/STM32F407-Buoyancy-Prototype.dir/startup_stm32f407xx.s.obj
                                         0x154 (size before relaxing)
 
 .comment        0x0000000000000000       0x4c
