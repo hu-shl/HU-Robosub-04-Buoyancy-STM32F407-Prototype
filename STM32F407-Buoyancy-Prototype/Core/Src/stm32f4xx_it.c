@@ -245,7 +245,7 @@ void TIM3_IRQHandler(void)
   //  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_R, value2); // set value2 on DAC2	PA5
   //  HAL_DAC_Start(&hdac, DAC_CHANNEL_2); // execute new value
 
-  HAL_GPIO_TogglePin(GPIOD, LD5_Pin); // Blink onboard LED
+  HAL_GPIO_TogglePin(GPIOD, LD6_Pin); // Blink onboard LED
   /* USER CODE END TIM3_IRQn 1 */
 }
 
