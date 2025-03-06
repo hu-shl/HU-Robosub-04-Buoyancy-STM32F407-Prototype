@@ -207,6 +207,38 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
+  * @brief This function handles EXTI line0 interrupt.
+  */
+void EXTI0_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI0_IRQn 0 */
+  /** This interrupt handler is automatically generated after the interrupt (NVIC) is enabled
+  * on the processor via .ioc. Of course, you still have to code the contents of the handler yourself.
+  * Here, the handler catches the keys of the ARM dev board keyboard. <br>
+  * After a key is pressed, it is determined WHICH key that was with KEYS_read().
+  * 
+  * If for example FREERTOS is defined
+  * Vervolgens wordt de key meegestuurd met een FreeRTOS event, die opgevangen wordt
+  * door de task ARM_keys_IRQ(). Daarna wordt, indien nodig, een context switch
+  * afgedwongen door portYIELD_FROM_ISR().
+  */
+  int        key;
+
+  HAL_GPIO_EXTI_IRQHandler(Key_int_Pin);
+
+  key = KEYS_read(); // determine which key is pressed...
+  
+  // KEYS_initISR(0); // set all lines lo if you want repeating keys
+  KEYS_initISR(1);    // set all lines hi for reading all 16 keys
+
+  /* USER CODE END EXTI0_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(Key_int_Pin);
+  /* USER CODE BEGIN EXTI0_IRQn 1 */
+
+  /* USER CODE END EXTI0_IRQn 1 */
+}
+
+/**
   * @brief This function handles TIM3 global interrupt.
   */
 void TIM3_IRQHandler(void)

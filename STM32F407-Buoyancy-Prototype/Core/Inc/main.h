@@ -85,6 +85,7 @@ void Error_Handler(void);
 #define SPI1_MOSI_GPIO_Port GPIOA
 #define Key_int_Pin GPIO_PIN_0
 #define Key_int_GPIO_Port GPIOB
+#define Key_int_EXTI_IRQn EXTI0_IRQn
 #define BOOT1_Pin GPIO_PIN_2
 #define BOOT1_GPIO_Port GPIOB
 #define CLK_IN_Pin GPIO_PIN_10
@@ -93,8 +94,8 @@ void Error_Handler(void);
 #define KEY_K3_GPIO_Port GPIOD
 #define KEY_K4_Pin GPIO_PIN_9
 #define KEY_K4_GPIO_Port GPIOD
-#define Key_R1_Pin GPIO_PIN_11
-#define Key_R1_GPIO_Port GPIOD
+#define KEY_R1_Pin GPIO_PIN_11
+#define KEY_R1_GPIO_Port GPIOD
 #define LD4_Pin GPIO_PIN_12
 #define LD4_GPIO_Port GPIOD
 #define LD3_Pin GPIO_PIN_13
