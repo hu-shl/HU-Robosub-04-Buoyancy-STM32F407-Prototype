@@ -222,12 +222,23 @@ void EXTI0_IRQHandler(void)
   * door de task ARM_keys_IRQ(). Daarna wordt, indien nodig, een context switch
   * afgedwongen door portYIELD_FROM_ISR().
   */
-  int        key;
+  extern int               ARM_key;       // extern in main.c
+  extern bool 		         aKeyIsPressed; // is an ARM pressed?
 
   HAL_GPIO_EXTI_IRQHandler(Key_int_Pin);
 
-  key = KEYS_read(); // determine which key is pressed...
+  ARM_key = KEYS_read(); // determine which key is pressed...
   
+  aKeyIsPressed = ARM_key ? true : false; // Switch boolean
+
+  if (aKeyIsPressed)
+  {
+    if (ARM_key == key_1) // als ingedrukte key gelijk is aan 1
+      LED_put(1);
+    else if (ARM_key == key_4)
+      LED_put(0);
+  }
+
   // KEYS_initISR(0); // set all lines lo if you want repeating keys
   KEYS_initISR(1);    // set all lines hi for reading all 16 keys
 

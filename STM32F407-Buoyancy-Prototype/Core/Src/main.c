@@ -56,9 +56,8 @@ HCD_HandleTypeDef hhcd_USB_OTG_FS;
 /* USER CODE BEGIN PV */
 volatile int value1,value2; // left channel, right channel values
 
-volatile uint32_t pos; // ADC indexing
-volatile uint32_t adc1_buf[BUF_SIZE];
-volatile bool bufferFull = false;
+bool aKeyIsPressed = false;
+int ARM_key = 0;
 
 /* USER CODE END PV */
 
@@ -129,13 +128,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    int i, leds;
-    leds = 1;
-		for (i=0; i<8; i++, leds<<=1)
-    {
-      LED_put(leds); // set leds
-      HAL_Delay(100);
-    }
+    // int i, leds;
+    // leds = 1;
+		// for (i=0; i<8; i++, leds<<=1)
+    // {
+    //   LED_put(leds); // set leds
+    //   HAL_Delay(100);
+    // }
   }
 
   /* USER CODE END 3 */
