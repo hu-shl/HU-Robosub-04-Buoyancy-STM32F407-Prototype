@@ -11,7 +11,9 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -31,7 +33,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 64,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 49,
 				"parent" : 0
 			}
 		]
@@ -62,6 +76,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 3,
+					"path" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/Core/Inc/Ports"
+				},
 				{
 					"backtrace" : 2,
 					"path" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/stm32cubemx/../../Core/Inc"
@@ -123,7 +141,8 @@
 				26,
 				27,
 				28,
-				29
+				29,
+				30
 			]
 		},
 		{
@@ -151,6 +170,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 3,
+					"path" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/Core/Inc/Ports"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/Users/jannickbloemendal/Library/CloudStorage/OneDrive-StichtingHogeschoolUtrecht/EE jaar 3/Quest/Software/STM32F407/STM32F407-Buoyancy-Prototype/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -174,7 +197,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				30
+				31
 			]
 		}
 	],
@@ -236,19 +259,26 @@
 				26,
 				27,
 				28,
-				29
+				29,
+				30
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				30
+				31
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Inc/Ports/keys.c",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,

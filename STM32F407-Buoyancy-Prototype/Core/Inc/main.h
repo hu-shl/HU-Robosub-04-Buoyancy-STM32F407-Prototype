@@ -39,6 +39,8 @@ extern "C" {
 #include "ctype.h"  	// toupper
 #include "stdbool.h"	// true and false boolean
 #include "math.h" 		// sinus
+
+#include "keys.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

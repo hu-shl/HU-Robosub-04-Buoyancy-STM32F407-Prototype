@@ -116,6 +116,9 @@ int main(void)
   MX_USB_OTG_FS_HCD_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);				// start the interrupt timer 3
+
+  KEYS_init();
+  KEYS_initISR(1); // set all lines high once
   /* USER CODE END 2 */
 
   /* Infinite loop */
