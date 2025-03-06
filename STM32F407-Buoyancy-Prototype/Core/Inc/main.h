@@ -41,6 +41,7 @@ extern "C" {
 #include "math.h" 		// sinus
 
 #include "keys.h"
+#include "leds.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -77,8 +78,8 @@ void Error_Handler(void);
 #define PH0_OSC_IN_GPIO_Port GPIOH
 #define PH1_OSC_OUT_Pin GPIO_PIN_1
 #define PH1_OSC_OUT_GPIO_Port GPIOH
-#define OTG_FS_PowerSwitchOn_Pin GPIO_PIN_0
-#define OTG_FS_PowerSwitchOn_GPIO_Port GPIOC
+#define OTG_FS_PowerSwitchOr_Pin GPIO_PIN_0
+#define OTG_FS_PowerSwitchOr_GPIO_Port GPIOC
 #define PDM_OUT_Pin GPIO_PIN_3
 #define PDM_OUT_GPIO_Port GPIOC
 #define SPI1_MISO_Pin GPIO_PIN_6
@@ -88,6 +89,8 @@ void Error_Handler(void);
 #define Key_int_Pin GPIO_PIN_0
 #define Key_int_GPIO_Port GPIOB
 #define Key_int_EXTI_IRQn EXTI0_IRQn
+#define LED_SER_Pin GPIO_PIN_1
+#define LED_SER_GPIO_Port GPIOB
 #define BOOT1_Pin GPIO_PIN_2
 #define BOOT1_GPIO_Port GPIOB
 #define CLK_IN_Pin GPIO_PIN_10
@@ -122,6 +125,8 @@ void Error_Handler(void);
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14
 #define SWCLK_GPIO_Port GPIOA
+#define LED_SCK_Pin GPIO_PIN_15
+#define LED_SCK_GPIO_Port GPIOA
 #define I2S3_SCK_Pin GPIO_PIN_10
 #define I2S3_SCK_GPIO_Port GPIOC
 #define I2S3_SD_Pin GPIO_PIN_12
@@ -144,6 +149,8 @@ void Error_Handler(void);
 #define SWO_GPIO_Port GPIOB
 #define Audio_SCL_Pin GPIO_PIN_6
 #define Audio_SCL_GPIO_Port GPIOB
+#define LED_RCK_Pin GPIO_PIN_8
+#define LED_RCK_GPIO_Port GPIOB
 #define Audio_SDA_Pin GPIO_PIN_9
 #define Audio_SDA_GPIO_Port GPIOB
 #define MEMS_INT2_Pin GPIO_PIN_1

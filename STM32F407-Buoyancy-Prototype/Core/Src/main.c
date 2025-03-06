@@ -117,6 +117,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);				// start the interrupt timer 3
 
+  LED_init();
   KEYS_initISR(1); // set all lines high once
   /* USER CODE END 2 */
 
@@ -125,9 +126,14 @@ int main(void)
 
   while (1)
   {
-
     /* USER CODE END WHILE */
-
+    int i, leds;
+    leds = 1;
+		for (i=0; i<8; i++, leds<<=1)
+    {
+      LED_put(leds); // set leds
+      HAL_Delay(1000);
+    }
     /* USER CODE BEGIN 3 */
   }
 
@@ -463,9 +469,6 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(CS_I2C_SPI_GPIO_Port, CS_I2C_SPI_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(OTG_FS_PowerSwitchOn_GPIO_Port, OTG_FS_PowerSwitchOn_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, KEY_R1_Pin|LD4_Pin|LD3_Pin|LD5_Pin
                           |LD6_Pin|KEY_R2_Pin|KEY_R3_Pin|KEY_R4_Pin
                           |Audio_RST_Pin, GPIO_PIN_RESET);
@@ -480,8 +483,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(CS_I2C_SPI_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : OTG_FS_PowerSwitchOn_Pin Buzzer_Pin */
-  GPIO_InitStruct.Pin = OTG_FS_PowerSwitchOn_Pin|Buzzer_Pin;
+  /*Configure GPIO pins : Buzzer_Pin */
+  GPIO_InitStruct.Pin = Buzzer_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
