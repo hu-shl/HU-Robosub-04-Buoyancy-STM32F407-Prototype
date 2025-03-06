@@ -24,8 +24,8 @@ After that, you can put an 8 bit value to the LEDs
  */
 void LED_init(void)
 {
-	HAL_GPIO_WritePin(P_LED_SER, LED_SER_Pin, GPIO_PIN_RESET);
-	HL_GPIO_WritePin(P_LED_SCK, LED_SCK_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(P_LED_SER, LED_SER_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(P_LED_SCK, LED_SCK_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(P_LED_RCK, LED_RCK_Pin, GPIO_PIN_SET);
   HAL_Delay(1000);
   LED_put(0);
