@@ -1,0 +1,19 @@
+# Ignore OS-specific files
+*.DS_Store
+Thumbs.db
+
+# ignore STM32 build and driver
+**/.metadata/
+
+# Ignore generated Doxygen files
+*/Doxygen/html
+*/Doxygen/latex
+
+# VS Code files for those working on multiple tools
+**.vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+
+*.code-workspace
