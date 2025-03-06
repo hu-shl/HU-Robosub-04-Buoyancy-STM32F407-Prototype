@@ -94,7 +94,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-    HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -125,8 +125,7 @@ int main(void)
   {
 
     /* USER CODE END WHILE */
-    // HAL_GPIO_TogglePin(GPIOD, LD3_Pin); // Blink orange onboard LED
-    // HAL_Delay(5000);
+
     /* USER CODE BEGIN 3 */
   }
 
@@ -468,6 +467,9 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOD, LD4_Pin|LD3_Pin|LD5_Pin|LD6_Pin
                           |Audio_RST_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, GPIO_PIN_RESET);
+
   /*Configure GPIO pin : CS_I2C_SPI_Pin */
   GPIO_InitStruct.Pin = CS_I2C_SPI_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -475,12 +477,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(CS_I2C_SPI_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : OTG_FS_PowerSwitchOn_Pin */
-  GPIO_InitStruct.Pin = OTG_FS_PowerSwitchOn_Pin;
+  /*Configure GPIO pins : OTG_FS_PowerSwitchOn_Pin Buzzer_Pin */
+  GPIO_InitStruct.Pin = OTG_FS_PowerSwitchOn_Pin|Buzzer_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(OTG_FS_PowerSwitchOn_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PDM_OUT_Pin */
   GPIO_InitStruct.Pin = PDM_OUT_Pin;
@@ -490,12 +492,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF5_SPI2;
   HAL_GPIO_Init(PDM_OUT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : B1_Pin */
-  GPIO_InitStruct.Pin = B1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
-
   /*Configure GPIO pins : SPI1_MISO_Pin SPI1_MOSI_Pin */
   GPIO_InitStruct.Pin = SPI1_MISO_Pin|SPI1_MOSI_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -503,6 +499,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : Key_int_Pin */
+  GPIO_InitStruct.Pin = Key_int_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(Key_int_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BOOT1_Pin */
   GPIO_InitStruct.Pin = BOOT1_Pin;
@@ -517,6 +519,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Alternate = GPIO_AF5_SPI2;
   HAL_GPIO_Init(CLK_IN_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : KEY_K3_Pin KEY_K4_Pin Key_R1_Pin KEY_R2_Pin
+                           KEY_R3_Pin KEY_R4_Pin KEY_K1_Pin KEY_K2_Pin */
+  GPIO_InitStruct.Pin = KEY_K3_Pin|KEY_K4_Pin|Key_R1_Pin|KEY_R2_Pin
+                          |KEY_R3_Pin|KEY_R4_Pin|KEY_K1_Pin|KEY_K2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LD4_Pin LD3_Pin LD5_Pin LD6_Pin
                            Audio_RST_Pin */
