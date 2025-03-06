@@ -12,23 +12,22 @@ Revision:	2
            PA15 - SER: Data input
 
 To use the LEDs use the following line to set the pins:
-	LED_init();
+     LED_init();
 After that, you can put an 8 bit value to the LEDs
 */
 
 #include "main.h"
-
 
 /* LED Initialize
  * This function initializes the pins reset state
  */
 void LED_init(void)
 {
-  HAL_GPIO_WritePin(P_LED_SER, LED_SER_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(P_LED_SCK, LED_SCK_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(P_LED_RCK, LED_RCK_Pin, GPIO_PIN_SET);
-  HAL_Delay(1000);
-  LED_put(0);
+     HAL_GPIO_WritePin(LED_SER_GPIO_Port, LED_SER_Pin, GPIO_PIN_RESET);
+     HAL_GPIO_WritePin(LED_SCK_GPIO_Port, LED_SCK_Pin, GPIO_PIN_RESET);
+     HAL_GPIO_WritePin(LED_RCK_GPIO_Port, LED_RCK_Pin, GPIO_PIN_SET);
+     HAL_Delay(1000);
+     LED_put(0);
 }
 
 /* LED put
@@ -38,15 +37,14 @@ void LED_put(unsigned short led_byte)
 {
      unsigned int i;
 
-     for(i=128; i>=1; i>>=1)
+     for (i = 128; i >= 1; i >>= 1)
      {
-       	  HAL_GPIO_WritePin(P_LED_SER, LED_SER_Pin, (led_byte & i) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(LED_SER_GPIO_Port, LED_SER_Pin, (led_byte & i) ? GPIO_PIN_SET : GPIO_PIN_RESET);
 
-          HAL_GPIO_WritePin(P_LED_SCK, LED_SCK_Pin, GPIO_PIN_SET);
-          HAL_GPIO_WritePin(P_LED_SCK, LED_SCK_Pin, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(LED_SCK_GPIO_Port, LED_SCK_Pin, GPIO_PIN_SET);
+          HAL_GPIO_WritePin(LED_SCK_GPIO_Port, LED_SCK_Pin, GPIO_PIN_RESET);
      }
 
-     HAL_GPIO_WritePin(P_LED_RCK, LED_RCK_Pin, GPIO_PIN_SET);
-     HAL_GPIO_WritePin(P_LED_RCK, LED_RCK_Pin, GPIO_PIN_RESET);
+     HAL_GPIO_WritePin(LED_RCK_GPIO_Port, LED_RCK_Pin, GPIO_PIN_SET);
+     HAL_GPIO_WritePin(LED_RCK_GPIO_Port, LED_RCK_Pin, GPIO_PIN_RESET);
 }
-

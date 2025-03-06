@@ -23,9 +23,6 @@ After that, you can put an 8 bit value to the LEDs
  */
 
 /****************Defines********************************/
-#define	P_LED_SER	GPIOA
-#define	P_LED_SCK	GPIOB
-#define	P_LED_RCK	GPIOB
 
 /****************Function Prototypes********************/
 void 	LED_init	(void);
