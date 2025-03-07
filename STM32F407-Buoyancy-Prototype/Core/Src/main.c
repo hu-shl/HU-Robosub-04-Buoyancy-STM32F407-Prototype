@@ -129,6 +129,9 @@ int main(void)
 
   LED_init();
   KEYS_initISR(1); // set all lines high once
+
+  TIM4->CCR1 = 1250; // 50% duty cycle (2499 / 2) // PD12 J5
+  HAL_Delay(1500);
   /* USER CODE END 2 */
 
   /* Infinite loop */
