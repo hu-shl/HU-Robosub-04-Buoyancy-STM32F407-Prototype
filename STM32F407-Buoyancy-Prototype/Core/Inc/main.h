@@ -111,12 +111,8 @@ void Error_Handler(void);
 #define KEY_K4_GPIO_Port GPIOD
 #define KEY_R1_Pin GPIO_PIN_11
 #define KEY_R1_GPIO_Port GPIOD
-#define LD4_Pin GPIO_PIN_12
-#define LD4_GPIO_Port GPIOD
 #define LD3_Pin GPIO_PIN_13
 #define LD3_GPIO_Port GPIOD
-#define LD5_Pin GPIO_PIN_14
-#define LD5_GPIO_Port GPIOD
 #define LD6_Pin GPIO_PIN_15
 #define LD6_GPIO_Port GPIOD
 #define I2S3_MCK_Pin GPIO_PIN_7
