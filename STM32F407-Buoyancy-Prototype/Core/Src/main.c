@@ -135,14 +135,42 @@ int main(void)
     //   LED_put(leds); // set leds
     //   HAL_Delay(100);
     // }
+    unsigned short led_state = 0x00; // Initialize LED state
+
+    // Turn on and off LD8 LD7 LD6 LDR5 
     if (aKeyIsPressed)
     {
-      if (ARM_key == key_1) // als ingedrukte key gelijk is aan 1
-        LED_put(1);
-      else if (ARM_key == key_4)
-        LED_put(0);
+      switch (ARM_key)
+      {
+        case key_1:
+            led_state = 0x01;
+            break;
+        case key_2:
+            led_state = 0x02;
+            break;
+        case key_3:
+            led_state = 0x04;
+            break;
+        case key_a:
+            led_state = 0x08;
+            break;
+        case key_4:
+            led_state &= 0x01;
+            break;
+        case key_5:
+            led_state &= 0x02;
+            break;
+        case key_6:
+            led_state &= 0x04;
+            break;
+        case key_b:
+            led_state &= 0x08;  
+            break;
+      default:
+        break;
+      }
+      LED_put(led_state);
     }
-    
   }
 
   /* USER CODE END 3 */
