@@ -56,8 +56,8 @@ HCD_HandleTypeDef hhcd_USB_OTG_FS;
 /* USER CODE BEGIN PV */
 volatile int value1,value2; // left channel, right channel values
 
-bool aKeyIsPressed = false;
-int ARM_key = 0;
+volatile bool aKeyIsPressed = false;
+volatile int ARM_key = 0;
 
 /* USER CODE END PV */
 
@@ -135,6 +135,14 @@ int main(void)
     //   LED_put(leds); // set leds
     //   HAL_Delay(100);
     // }
+    if (aKeyIsPressed)
+    {
+      if (ARM_key == key_1) // als ingedrukte key gelijk is aan 1
+        LED_put(1);
+      else if (ARM_key == key_4)
+        LED_put(0);
+    }
+    
   }
 
   /* USER CODE END 3 */
