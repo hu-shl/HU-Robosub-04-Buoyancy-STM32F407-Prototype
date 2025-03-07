@@ -95,6 +95,14 @@ void Error_Handler(void);
 #define LED_RCK_GPIO_Port GPIOB
 #define BOOT1_Pin GPIO_PIN_2
 #define BOOT1_GPIO_Port GPIOB
+#define VALVE_LF_Pin GPIO_PIN_7
+#define VALVE_LF_GPIO_Port GPIOE
+#define VALVE_RF_Pin GPIO_PIN_8
+#define VALVE_RF_GPIO_Port GPIOE
+#define VALVE_LB_Pin GPIO_PIN_9
+#define VALVE_LB_GPIO_Port GPIOE
+#define VALVE_RB_Pin GPIO_PIN_10
+#define VALVE_RB_GPIO_Port GPIOE
 #define CLK_IN_Pin GPIO_PIN_10
 #define CLK_IN_GPIO_Port GPIOB
 #define KEY_K3_Pin GPIO_PIN_8

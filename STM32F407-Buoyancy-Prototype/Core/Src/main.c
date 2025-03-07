@@ -142,34 +142,42 @@ int main(void)
     // }
     unsigned short led_state = 0x00; // Initialize LED state
 
-    // Turn on and off LD8 LD7 LD6 LDR5 
+    // Turn on and off LD8 LD7 LD6 LD5 
     if (aKeyIsPressed)
     {
       switch (ARM_key)
       {
         case key_1:
-            led_state = 0x01;
+            led_state = 0x01; // Turn on LD8
+            HAL_GPIO_WritePin(VALVE_LF_GPIO_Port, VALVE_LF_Pin, GPIO_PIN_SET);
             break;
         case key_2:
-            led_state = 0x02;
+            led_state = 0x02; // Turn on LD7
+            HAL_GPIO_WritePin(VALVE_RF_GPIO_Port, VALVE_RF_Pin, GPIO_PIN_SET);
             break;
         case key_3:
-            led_state = 0x04;
+            led_state = 0x04; // Turn on LD6
+            HAL_GPIO_WritePin(VALVE_LB_GPIO_Port, VALVE_LB_Pin, GPIO_PIN_SET);
             break;
         case key_a:
-            led_state = 0x08;
+            led_state = 0x08; // Turn on LD5
+            HAL_GPIO_WritePin(VALVE_RB_GPIO_Port, VALVE_RB_Pin, GPIO_PIN_SET);
             break;
         case key_4:
-            led_state &= 0x01;
+            led_state &= 0x01; // Turn off LD8
+            HAL_GPIO_WritePin(VALVE_LF_GPIO_Port, VALVE_LF_Pin, GPIO_PIN_RESET);
             break;
         case key_5:
-            led_state &= 0x02;
+            led_state &= 0x02; // Turn off LD7
+            HAL_GPIO_WritePin(VALVE_RF_GPIO_Port, VALVE_RF_Pin, GPIO_PIN_RESET);
             break;
         case key_6:
-            led_state &= 0x04;
+            led_state &= 0x04; // Turn off LD6
+            HAL_GPIO_WritePin(VALVE_LB_GPIO_Port, VALVE_LB_Pin, GPIO_PIN_RESET);
             break;
         case key_b:
-            led_state &= 0x08;  
+            led_state &= 0x08; // Turn off LD5
+            HAL_GPIO_WritePin(VALVE_RB_GPIO_Port, VALVE_RB_Pin, GPIO_PIN_RESET);
             break;
       default:
         break;
@@ -178,6 +186,10 @@ int main(void)
     }
 
     TIM2->CCR1 = 1250; // 50% duty cycle (2499 / 2)
+
+    // HAL_GPIO_WritePin(VALVE_LF_GPIO_Port, VALVE_LF_Pin, GPIO_PIN_RESET);
+    // HAL_Delay(1000);
+    // HAL_GPIO_WritePin(VALVE_LF_GPIO_Port, VALVE_LF_Pin, GPIO_PIN_SET);
   }
 
   /* USER CODE END 3 */
@@ -568,7 +580,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(CS_I2C_SPI_GPIO_Port, CS_I2C_SPI_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, CS_I2C_SPI_Pin|VALVE_LF_Pin|VALVE_RF_Pin|VALVE_LB_Pin
+                          |VALVE_RB_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(OTG_FS_PowerSwitchOr_GPIO_Port, OTG_FS_PowerSwitchOr_Pin, GPIO_PIN_SET);
@@ -635,6 +648,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(BOOT1_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : VALVE_LF_Pin VALVE_RF_Pin VALVE_LB_Pin VALVE_RB_Pin */
+  GPIO_InitStruct.Pin = VALVE_LF_Pin|VALVE_RF_Pin|VALVE_LB_Pin|VALVE_RB_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /*Configure GPIO pin : CLK_IN_Pin */
   GPIO_InitStruct.Pin = CLK_IN_Pin;
